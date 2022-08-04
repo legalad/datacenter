@@ -1,0 +1,11 @@
+.card-header{
+  border-bottom: solid 3px #5a5a5a;
+}
+.table-hover{
+  margin-left: 15px;
+  border-bottom: solid 2px #8d8d8d;
+}
+.d-md-table-row{
+  border-bottom: solid 1px silver;
+}
+

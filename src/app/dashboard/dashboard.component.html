@@ -16,3 +16,18 @@
     </div>
   </div>
 </div>
+<div class="container mt-2">
+  <div class="card card-block">
+    <div class="card-body">
+      <h3 class="card-header"><h4 class="card-title">Cluster 1</h4></h3>
+      <table app-nodes class="table table-hover">
+        <tr app-nodes-row *ngFor="let node of cluster1" [node]="node"></tr>
+      </table>
+      <h3 class="card-header"><h4 class="card-title">Cluster 2</h4></h3>
+      <table app-nodes class="table table-hover">
+        <tr app-nodes-row *ngFor="let node of cluster2" [node]="node"></tr>
+      </table>
+    </div>
+  </div>
+</div>
+

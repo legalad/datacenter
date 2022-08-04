@@ -51,10 +51,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
       cpu: {available: 16, used: this.randomInteger(0, 16)},
       mem: {available: 48, used: this.randomInteger(0, 48)}
     };
-    this.cpu.used = node.cpu.used;
-    this.cpu.available = node.cpu.available;
-    this.mem.used = node.mem.used;
-    this.mem.available = node.mem.available;
+    this.cpu.used += node.cpu.used;
+    this.cpu.available += node.cpu.available;
+    this.mem.used += node.mem.used;
+    this.mem.available += node.mem.available;
 
     return node;
   }
