@@ -1,1 +1,18 @@
-<p>{{cluster1 | json}}</p>
+<div class="container mt-2">
+  <div class="card card-block">
+    <div class="row">
+      <app-metric class="col-sm-6"
+                  [used]="cpu.used"
+                  [available]="cpu.available"
+                  [title]="'CPU'"
+                  [description]="'CPU cores usage'">
+      </app-metric>
+      <app-metric class="col-sm-6"
+                  [used]="mem.used"
+                  [available]="mem.available"
+                  [title]="'Memory'"
+                  [description]="'memory usage [GB]'">
+      </app-metric>
+    </div>
+  </div>
+</div>

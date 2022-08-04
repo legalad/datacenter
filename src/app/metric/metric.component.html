@@ -1,0 +1,10 @@
+<div class="card">
+  <h5 class="card-header" [ngClass]="{'bg-danger': isDanger(), 'bg-success': !isDanger()}">{{title}}</h5>
+  <div class="card-body">
+    <h4 class="card-title">{{value}}/{{max}} ({{value / max |
+      percent:'1.0-2'}})</h4>
+    <p class="card-text">{{description}}</p>
+      <ngb-progressbar [animated]="true" [showValue]="true" [value]="value" [max]="max" [type]="isDanger() ? 'danger' : 'success'"></ngb-progressbar>
+  </div>
+</div>
+
