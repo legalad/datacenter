@@ -9,8 +9,6 @@ import {ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges} fro
 
 export class MetricComponent implements OnChanges {
 
-  @Input() title: string ='';
-  @Input() description: string ='';
   @Input('used') value: number = 0;
   @Input('available') max: number = 100;
 

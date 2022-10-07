@@ -1,17 +1,13 @@
 <div class="container mt-2">
   <div class="card card-block">
     <div class="row">
-      <app-metric class="col-sm-6"
-                  [used]="cpu.used"
-                  [available]="cpu.available"
-                  [title]="'CPU'"
-                  [description]="'CPU cores usage'">
+      <app-metric class="col-sm-6" [used]="cpu.used" [available]="cpu.available">
+        <metric-title>CPU</metric-title>
+        <metric-description>CPU cores usage</metric-description>
       </app-metric>
-      <app-metric class="col-sm-6"
-                  [used]="mem.used"
-                  [available]="mem.available"
-                  [title]="'Memory'"
-                  [description]="'memory usage [GB]'">
+      <app-metric class="col-sm-6" [used]="mem.used" [available]="mem.available">
+        <metric-title>Memory</metric-title>
+        <metric-description>memory usage [GB]</metric-description>
       </app-metric>
     </div>
   </div>
@@ -30,4 +26,4 @@
     </div>
   </div>
 </div>
-
+<template ngbModalContainer></template>
